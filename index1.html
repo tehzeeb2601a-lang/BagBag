@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BagBag store</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <h2>BagBag</h2>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+
+            <input type="text" placeholder="Search Bags">
+
+            <button>
+
+                <i class="fa-solid fa-magnifying-class"></i>
+
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+
+        <div class="overlay">
+
+            <h1>Premium Bag Collection</h1>
+
+            <p>Discover Stylish Bags For Every Occasion</p>
+
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <section class="offer">
+
+        <div class="offer-text">
+
+            <h1>Summer Sale</h1>
+
+            <h2>Up To 50% OFF</h2>
+
+            <p>Premium Bags Collection Available Now</p>
+
+            <button>Shop Now</button>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+
+        <h2 class="section-title">Shop By Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="images (6).jpg" alt="Backpack">
+                <h3>Backpacks</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="images (1).jpg" alt="Handbag">
+                <h3>Hand Bags</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="images (2).jpg" alt="Slingbag">
+                <h3>Sling Bags</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="images (5).jpg" alt="Laptopbag">
+                <h3>Laptop Bags</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="images (3).jpg" alt="Travelbag">
+                <h3>Travel Bags</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="images (4).jpg" alt="Totebag">
+                <h3>Tote Bags</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection" id="men">
+
+        <h2 class="section-title">Men's Collection</h2>
+        <div class="product-container">
+
+            <div class="product-card" onclick="openProduct('backpack.html')">
+
+                <div class="product-card">
+
+                    <img src="men backpack.jpg">
+
+                    <div class="product-content">
+
+                        <h3>Urban Backpack</h3>
+
+                        <p>Premium leather backpack for office & college.</p>
+
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+
+                        <div class="price">
+                            Rs. 3,999
+                        </div>
+
+                        <button class="buy-btn">Buy Now</button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="men laptop.jpg">
+
+                <div class="product-content">
+
+                    <h3>Executive Laptop Bag</h3>
+
+                    <p>Office laptop bag with waterproof material.</p>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <div class="price">
+                        Rs. 4,299
+                    </div>
+
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="men travel.jpg">
+
+                <div class="product-content">
+
+                    <h3>Classic Travel Bag</h3>
+
+                    <p>Luxury travel bag with large storage.</p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <div class="price">
+                        Rs. 5,299
+                    </div>
+
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="collection" id="women">
+
+        <h2 class="section-title">Women's Collection</h2>
+
+        <div class="product-container">
+
+            <!-- Handbag -->
+
+            <div class="product-card">
+
+                <div class="heart">♡</div>
+
+                <img src="luxury.jpg" alt="Luxury Handbag">
+
+                <div class="product-content">
+
+                    <h3>Luxury Handbag</h3>
+
+                    <p>Elegant handbag for office, shopping and daily use.</p>
+
+                    <div class="rating">★★★★★</div>
+
+                    <div class="price">Rs. 4,499</div>
+
+                    <button class="buy-btn" onclick="buyBag('Luxury Handbag')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Shoulder Bag -->
+
+            <div class="product-card">
+
+                <div class="heart">♡</div>
+
+                <img src="shoulder.jpg" alt="Shoulder Bag">
+
+                <div class="product-content">
+
+                    <h3>Shoulder Bag</h3>
+
+                    <p>Classic shoulder bag with premium leather finish.</p>
+
+                    <div class="rating">★★★★★</div>
+
+                    <div class="price">Rs. 3,699</div>
+
+                    <button class="buy-btn" onclick="buyBag('Shoulder Bag')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Clutch Bag -->
+
+            <div class="product-card">
+
+                <div class="heart">♡</div>
+
+                <img src="clutch.jpg" alt="Clutch Bag">
+
+                <div class="product-content">
+
+                    <h3>Clutch Bag</h3>
+
+                    <p>Luxury clutch bag for parties and special occasions.</p>
+
+                    <div class="rating">★★★★★</div>
+
+                    <div class="price">Rs. 2,999</div>
+
+                    <button class="buy-btn" onclick="buyBag('Clutch Bag')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Brands -->
+
+    <section class="brands">
+
+        <h2 class="section-title">Top Brands</h2>
+
+        <div class="brand-container">
+
+            <div class="brand-card">
+                <img src="nike.jpg">
+                <h3>NIKE</h3>
+            </div>
+
+            <div class="brand-card">
+                <img src="adidas.jpg">
+                <h3>ADIDAS</h3>
+            </div>
+
+            <div class="brand-card">
+                <img src="puma.jpg">
+                <h3>PUMA</h3>
+            </div>
+
+            <div class="brand-card">
+                <img src="gucci.jpg">
+                <h3>GUCCI</h3>
+            </div>
+
+            <div class="brand-card">
+                <img src="lv.jpg">
+                <h3>LOUIS VUITTON</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ WHY CHOOSE US ================-->
+
+    <section class="why-us" id="why">
+
+        <h2 class="section-title">Why Choose BagBag?</h2>
+
+        <p class="why-text">
+            Experience premium quality, elegant designs, and exceptional customer service
+            with every purchase.
+        </p>
+
+        <div class="why-container">
+
+            <div class="why-card">
+
+                <img src="https://img.icons8.com/fluency/96/delivery.png">
+
+                <h3>Free Shipping</h3>
+
+                <p>
+                    Enjoy free nationwide delivery on all orders with safe
+                    and fast shipping.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img src="https://img.icons8.com/fluency/96/security-checked.png">
+
+                <h3>Secure Payment</h3>
+
+                <p>
+                    Your payments are protected with safe and encrypted
+                    checkout methods.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img src="https://img.icons8.com/fluency/96/return-purchase.png">
+
+                <h3>Easy Returns</h3>
+
+                <p>
+                    Not satisfied? Return your order easily within 7 days
+                    without any hassle.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <img src="https://img.icons8.com/fluency/96/prize.png">
+
+                <h3>Premium Quality</h3>
+
+                <p>
+                    Crafted with premium materials for durability,
+                    elegance and everyday comfort.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- <section class="services">
+
+        <h2 class="section-title">Why Choose Us</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <h3>Free Delivery</h3>
+
+                <p>Free shipping all over Pakistan.</p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>Secure Payment</h3>
+
+                <p>100% Secure Payment.</p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-rotate-left"></i>
+
+                <h3>Easy Return</h3>
+
+                <p>7 Days Return Policy.</p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>Premium Quality</h3>
+
+                <p>Original Premium Bags.</p>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="gallery" id="gallery">
+
+        <h2 class="section-title">Our Gallery</h2>
+
+        <div class="gallery-container">
+
+            <img src="image1.jpg" alt="Bag 1">
+            <img src="luxury.jpg" alt="Bag 2">
+            <img src="men travel.jpg" alt="Bag 3">
+            <img src="image2.jpg" alt="Bag 4">
+            <img src="clutch.jpg" alt="Bag 5">
+            <img src="men backpack.jpg" alt="Bag 6">
+
+        </div>
+
+    </section>
+
+    <!-- ================= CUSTOMER REVIEWS ================= -->
+
+    <section class="reviews">
+
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <div class="review-container">
+
+            <!-- Review 1 -->
+
+            <div class="review-card">
+
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&auto=format&fit=crop&q=80"
+                    alt="Sarah Khan">
+
+                <h3>Sarah Khan</h3>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "The quality of the handbag exceeded my expectations.
+                    The stitching, leather finish and elegant design make it
+                    perfect for both office and casual outings."
+                </p>
+
+            </div>
+
+            <!-- Review 2 -->
+
+            <div class="review-card">
+
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&auto=format&fit=crop&q=80"
+                    alt="Ahmed Ali">
+
+                <h3>Ahmed Ali</h3>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "I ordered a backpack and it arrived exactly as shown.
+                    Premium quality, comfortable to carry and excellent value
+                    for money. Highly recommended!"
+                </p>
+
+            </div>
+
+            <!-- Review 3 -->
+
+            <div class="review-card">
+
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&auto=format&fit=crop&q=80"
+                    alt="Ayesha Malik">
+
+                <h3>Ayesha Malik</h3>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Beautiful collection with modern designs.
+                    Fast delivery, secure packaging and outstanding customer
+                    service. I'll definitely shop again."
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEEDBACK ================= -->
+
+    <section class="feedback" id="feedback">
+
+        <h2 class="section-title">Feedback</h2>
+
+        <form onsubmit="return validateForm()">
+
+            <input type="text" id="name" placeholder="Your Name">
+
+            <input type="email" id="email" placeholder="Your Email">
+
+            <textarea id="message" rows="6" placeholder="Write Your Feedback"></textarea>
+
+            <button type="submit">Send Feedback</button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <p class="contact-text">
+            We'd love to hear from you! Feel free to contact us for any questions or support.
+        </p>
+
+        <div class="contact-container">
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>📍 Karachi, Pakistan</p>
+
+                <p>📞 +92 300 1234567</p>
+
+                <p>📧 bagbagstore@gmail.com</p>
+
+                <p>🕒 Mon - Sat : 9:00 AM - 8:00 PM</p>
+
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form">
+
+                <form onsubmit="return contactForm()">
+
+                    <input type="text" id="cname" placeholder="Your Name">
+
+                    <input type="email" id="cemail" placeholder="Your Email">
+
+                    <input type="text" id="csubject" placeholder="Subject">
+
+                    <textarea id="cmessage" rows="6" placeholder="Your Message"></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DOWNLOAD ================= -->
+
+    <section class="download">
+
+        <h2 class="section-title">Download Our Catalogue</h2>
+
+        <p class="paragraph">Click the button below to download our latest bag catalogue.</p>
+        <br>
+        <br>
+
+
+        <a href="pdf/catalogue.pdf" download>
+            <button class="download-btn">
+                Download PDF
+            </button>
+        </a>
+
+    </section>
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Logo -->
+
+            <div class="footer-box">
+
+                <h2>👜 BagBag</h2>
+
+                <p>
+                    Discover premium quality bags designed
+                    for every occasion.
+                    Style • Comfort • Luxury
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#categories">Categories</a></li>
+
+                    <li><a href="#men">Men</a></li>
+
+                    <li><a href="#women">Women</a></li>
+
+                    <li><a href="#gallery">Gallery</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Customer Care -->
+
+            <div class="footer-box">
+
+                <h3>Customer Care</h3>
+
+                <ul>
+
+                    <li><a href="#">FAQs</a></li>
+
+                    <li><a href="#">Shipping</a></li>
+
+                    <li><a href="#">Returns</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>📍 Karachi, Pakistan</p>
+
+                <p>📧 bagbagstore@gmail.com</p>
+
+                <p>📞 +92 300 1234567</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 BagBag | Crafted with 🤎 for Bag Lovers.</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- <button id="topBtn" onclick="topFunction()">
+</button>
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+
+<h3>BagBag</h3>
+
+<p>Premium Bags Collection</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<a href="#">Home</a><br>
+<a href="#">About</a><br>
+<a href="#">Gallery</a><br>
+<a href="#">Contact</a>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>Karachi, Pakistan</p>
+
+<p>bagbagstore@gmail.com</p>
+
+<p>+92 300 1234567</p>
+
+</div>
+
+</div>
+
+<p class="copyright">
+
+© 2026 BagBag | All Rights Reserved
+
+</p>
+
+</footer> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
